@@ -1,0 +1,34 @@
+{
+  "identificacao_projeto": "Muro de Gravidade Rodovia SP-330",
+  "tipo_muro": "GRAVIDADE_CONCRETO_CICLOPICO",
+  "responsavel_tecnico": "Eng. Martin Lofrano de Oliveira - CREA/SP",
+  "geometria": {
+    "altura_total_h_m": "3.20",
+    "largura_base_b_m": "1.80",
+    "espessura_crista_m": "0.50",
+    "espessura_base_paramento_m": "1.80",
+    "espessura_sapata_m": 0,
+    "comprimento_ponta_m": 0,
+    "profundidade_embutimento_d_m": "0.50",
+    "fck_concreto_mpa": 20
+  },
+  "solo_reaterro": {
+    "tipo_solo": "AREIA_FOFA",
+    "peso_especifico_kn_m3": 17,
+    "angulo_atrito_graus": 28,
+    "coesao_kpa": 0
+  },
+  "solo_fundacao": {
+    "tipo_solo": "AREIA_MEDIA",
+    "peso_especifico_kn_m3": 18,
+    "angulo_atrito_graus": 30,
+    "coesao_kpa": 0,
+    "coef_atrito_base_mu": "0.50",
+    "tensao_admissivel_solo_fundacao_kpa": 250
+  },
+  "carregamentos": {
+    "sobrecarga_uniforme_reaterro_kpa": "5.0",
+    "altura_nivel_freatico_m": 0,
+    "inclinacao_terrapleno_graus": 0
+  }
+}

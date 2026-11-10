@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+<defs>
+  <linearGradient id="gradHeader" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.8"/>
+  </linearGradient>
+  <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+  </filter>
+</defs>
+<rect width="1440" height="900" fill="#0f172a"/>
+<rect x="30" y="25" width="1380" height="75" rx="10" fill="url(#gradHeader)" filter="url(#shadow)"/>
+<text x="55" y="58" font-size="20" font-weight="bold" fill="#ffffff" letter-spacing="1">LOFRANO TECNOLOGIA | ENGENHARIA GEOTÉCNICA E ESTRUTURAL</text>
+<text x="55" y="82" font-size="14" fill="#e0f2fe">DIMENSIONAMENTO DE MUROS DE ARRIMO E CONTENÇÃO — ABNT NBR 11682:2009 / NBR 6118:2023</text>
+<rect x="1170" y="42" width="220" height="42" rx="21" fill="#10b981"/>
+<text x="1280" y="68" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">CONFORME NBR 11682</text>
+<rect x="30" y="115" width="1380" height="40" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="50" y="140" font-size="13" fill="#94a3b8">Obra / Projeto: <tspan fill="#f8fafc" font-weight="bold">Contenção Residencial Parque das Colinas</tspan> | Tipologia: <tspan fill="#06b6d4" font-weight="bold">CONCRETO_ARMADO_BALANCO</tspan> | Solo: <tspan fill="#eab308">AREIA_MEDIA</tspan></text>
+<rect x="30" y="170" width="670" height="700" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="55" y="202" font-size="16" font-weight="bold" fill="#f8fafc">Perfil Esquemático e Ações Geotécnicas</text>
+<line x1="55" y1="215" x2="675" y2="215" stroke="#334155" stroke-width="1"/>
+<rect x="360" y="270" width="280" height="400" fill="#78350f" fill-opacity="0.25"/>
+<text x="500" y="300" font-size="12" fill="#f97316" font-weight="bold" text-anchor="middle">Terrapleno de Reaterro (Solo)</text>
+<text x="500" y="320" font-size="11" fill="#94a3b8" text-anchor="middle">gamma = 18.0 kN/m³ | phi = 30°</text>
+<path d="M 200 670 L 480 670 L 480 620 L 360 620 L 310 270 L 260 270 L 260 620 L 200 620 Z" fill="#475569" stroke="#06b6d4" stroke-width="2"/>
+<text x="310" y="445" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">FUSTE</text>
+<text x="340" y="650" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">SAPATA / BASE</text>
+<line x1="80" y1="620" x2="200" y2="620" stroke="#10b981" stroke-width="3" stroke-dasharray="4,2"/>
+<text x="140" y="610" font-size="10" fill="#10b981" text-anchor="middle">Terreno Frontal</text>
+<line x1="310" y1="270" x2="650" y2="270" stroke="#f97316" stroke-width="3"/>
+<text x="580" y="260" font-size="10" fill="#f97316" text-anchor="middle">Linha do Terrapleno</text>
+<polygon points="490,460 490,480 440,470" fill="#ef4444"/>
+<line x1="590" y1="470" x2="490" y2="470" stroke="#ef4444" stroke-width="4"/>
+<text x="540" y="455" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">Eh = 75.8 kN/m</text>
+<polygon points="200,720 480,720 480,760 200,780" fill="#3b82f6" fill-opacity="0.3" stroke="#3b82f6" stroke-width="2"/>
+<text x="200" y="805" font-size="11" font-weight="bold" fill="#3b82f6">sigma_max = 123.1 kPa</text>
+<text x="480" y="785" font-size="11" font-weight="bold" fill="#3b82f6" text-anchor="end">sigma_min = 23.1 kPa</text>
+<text x="340" y="745" font-size="11" fill="#ffffff" text-anchor="middle">Pressões de Contato Solo-Base</text>
+<text x="80" y="470" font-size="12" font-weight="bold" fill="#94a3b8">H = 4.50 m</text>
+<text x="340" y="700" font-size="12" font-weight="bold" fill="#94a3b8" text-anchor="middle">B = 2.80 m</text>
+<rect x="720" y="170" width="690" height="155" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="745" y="200" font-size="15" font-weight="bold" fill="#f8fafc">1. Empuxos de Terra (Teoria de Rankine)</text>
+<text x="745" y="230" font-size="13" fill="#94a3b8">Coeficiente Ativo (Ka): <tspan fill="#f8fafc" font-weight="bold">0.3333</tspan> | Coeficiente Passivo (Kp): <tspan fill="#f8fafc" font-weight="bold">3.0</tspan></text>
+<text x="745" y="255" font-size="13" fill="#94a3b8">Empuxo Solo: <tspan fill="#f97316" font-weight="bold">60.75 kN/m</tspan> | Empuxo Sobrecarga: <tspan fill="#f97316" font-weight="bold">15.0 kN/m</tspan></text>
+<text x="745" y="280" font-size="13" fill="#94a3b8">Empuxo Hidrostático: <tspan fill="#06b6d4">0.0 kN/m</tspan> | Passivo Útil: <tspan fill="#10b981">9.72 kN/m</tspan></text>
+<text x="745" y="305" font-size="14" fill="#ef4444" font-weight="bold">Empuxo Total Solicitante (Eh): 75.75 kN/m (y = 1.65 m)</text>
+<rect x="720" y="340" width="690" height="175" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="745" y="370" font-size="15" font-weight="bold" fill="#f8fafc">2. Estabilidade Geotécnica Global (NBR 11682:2009)</text>
+<text x="745" y="400" font-size="13" fill="#94a3b8">Carga Normal Total (N): <tspan fill="#f8fafc" font-weight="bold">204.64 kN/m</tspan> | Força Resistente Atrito: <tspan fill="#f8fafc" font-weight="bold">117.41 kN/m</tspan></text>
+<text x="745" y="425" font-size="13" fill="#94a3b8">Momento Estabilizante (Me): <tspan fill="#10b981" font-weight="bold">345.100 kN.m/m</tspan></text>
+<text x="745" y="450" font-size="13" fill="#94a3b8">Momento Tombante (Mt): <tspan fill="#ef4444" font-weight="bold">124.88 kN.m/m</tspan></text>
+<text x="745" y="480" font-size="14" font-weight="bold" fill="#10b981">FS Tombamento: 2.77 (Mín. 1.50) — APROVADO</text>
+<text x="745" y="502" font-size="14" font-weight="bold" fill="#10b981">FS Deslizamento: 1.55 (Mín. 1.50) — APROVADO</text>
+<rect x="720" y="530" width="690" height="155" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="745" y="560" font-size="15" font-weight="bold" fill="#f8fafc">3. Tensões na Fundação e Regra do Terço Médio</text>
+<text x="745" y="590" font-size="13" fill="#94a3b8">Excentricidade (e): <tspan fill="#f8fafc" font-weight="bold">0.32 m</tspan> | Limite B/6: <tspan fill="#f8fafc" font-weight="bold">0.47 m</tspan> (Dentro do Terço Médio)</text>
+<text x="745" y="615" font-size="13" fill="#94a3b8">Tensão Máxima (sigma_max): <tspan fill="#06b6d4" font-weight="bold">123.12 kPa</tspan> | Mínima: <tspan fill="#06b6d4">23.06 kPa</tspan></text>
+<text x="745" y="645" font-size="14" font-weight="bold" fill="#10b981">Capacidade Admissível do Terreno: 300.0 kPa — APROVADO</text>
+<rect x="720" y="700" width="690" height="170" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="745" y="730" font-size="15" font-weight="bold" fill="#f8fafc">4. Recomendações Técnicas Normativas</text>
+<text x="745" y="760" font-size="13" fill="#10b981">Nenhum alerta impeditivo. Todas as verificações em plena conformidade.</text>
+</svg>

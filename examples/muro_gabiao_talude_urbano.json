@@ -1,0 +1,34 @@
+{
+  "identificacao_projeto": "Contenção em Gabiões Córrego Verde",
+  "tipo_muro": "GRAVIDADE_GABIAO",
+  "responsavel_tecnico": "Eng. Martin Lofrano de Oliveira - CREA/SP",
+  "geometria": {
+    "altura_total_h_m": "4.00",
+    "largura_base_b_m": "2.50",
+    "espessura_crista_m": "1.00",
+    "espessura_base_paramento_m": "2.50",
+    "espessura_sapata_m": 0,
+    "comprimento_ponta_m": 0,
+    "profundidade_embutimento_d_m": "0.50",
+    "fck_concreto_mpa": 0
+  },
+  "solo_reaterro": {
+    "tipo_solo": "SILTE_ARGILOSO",
+    "peso_especifico_kn_m3": 18,
+    "angulo_atrito_graus": 25,
+    "coesao_kpa": 0
+  },
+  "solo_fundacao": {
+    "tipo_solo": "AREIA_COMPACTA",
+    "peso_especifico_kn_m3": 19,
+    "angulo_atrito_graus": 34,
+    "coesao_kpa": 0,
+    "coef_atrito_base_mu": "0.55",
+    "tensao_admissivel_solo_fundacao_kpa": 280
+  },
+  "carregamentos": {
+    "sobrecarga_uniforme_reaterro_kpa": "5.0",
+    "altura_nivel_freatico_m": 0,
+    "inclinacao_terrapleno_graus": 0
+  }
+}

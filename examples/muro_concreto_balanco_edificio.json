@@ -1,0 +1,36 @@
+{
+  "identificacao_projeto": "Contenção Residencial Parque das Colinas",
+  "tipo_muro": "CONCRETO_ARMADO_BALANCO",
+  "responsavel_tecnico": "Eng. Martin Lofrano de Oliveira - CREA/SP",
+  "geometria": {
+    "altura_total_h_m": "4.50",
+    "largura_base_b_m": "2.80",
+    "espessura_crista_m": "0.30",
+    "espessura_base_paramento_m": "0.50",
+    "espessura_sapata_m": "0.45",
+    "comprimento_ponta_m": "0.70",
+    "profundidade_embutimento_d_m": "0.60",
+    "altura_dente_cisalhamento_m": 0,
+    "largura_dente_cisalhamento_m": 0,
+    "fck_concreto_mpa": 30
+  },
+  "solo_reaterro": {
+    "tipo_solo": "AREIA_MEDIA",
+    "peso_especifico_kn_m3": 18,
+    "angulo_atrito_graus": 30,
+    "coesao_kpa": 0
+  },
+  "solo_fundacao": {
+    "tipo_solo": "AREIA_COMPACTA",
+    "peso_especifico_kn_m3": 19,
+    "angulo_atrito_graus": 35,
+    "coesao_kpa": 0,
+    "coef_atrito_base_mu": "0.55",
+    "tensao_admissivel_solo_fundacao_kpa": 300
+  },
+  "carregamentos": {
+    "sobrecarga_uniforme_reaterro_kpa": "10.0",
+    "altura_nivel_freatico_m": 0,
+    "inclinacao_terrapleno_graus": 0
+  }
+}

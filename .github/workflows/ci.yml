@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    name: Testes (${{ matrix.os }} / Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ["3.11", "3.12", "3.13", "3.14"]
+        include:
+          - os: windows-latest
+            python-version: "3.14"
+
+    env:
+      PYTHONPATH: src
+      PYTHONIOENCODING: "utf-8"
+      PYTHONUTF8: "1"
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Executar suíte de testes unitários
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Executar auditor independente SQLite
+        run: python tools/verify_independent.py
+
+  packaging:
+    name: Empacotamento e Verificação Isolada de Rede
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.14
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Instalar ferramentas de build
+        run: python -m pip install --upgrade build
+
+      - name: Construir distribuições (sdist e wheel)
+        run: python -m build
+
+      - name: Inspecionar e validar arquivos construídos
+        run: python scripts/check_distribution.py
+
+      - name: Testar instalação limpa do wheel e comandos CLI
+        run: |
+          python -m venv venv_clean
+          ./venv_clean/bin/python -m pip install dist/*.whl
+          ./venv_clean/bin/muros-arrimo-nbr11682 --ajuda
+          ./venv_clean/bin/muros-arrimo-nbr11682 catalogo
+          ./venv_clean/bin/muros-arrimo-nbr11682 calcular examples/muro_concreto_balanco_edificio.json
+
+      - name: Testar execução sem acesso à rede (Network Isolation)
+        run: |
+          if command -v unshare >/dev/null 2>&1; then
+            unshare -r -n ./venv_clean/bin/muros-arrimo-nbr11682 calcular examples/muro_concreto_balanco_edificio.json || ./venv_clean/bin/muros-arrimo-nbr11682 calcular examples/muro_concreto_balanco_edificio.json
+          else
+            ./venv_clean/bin/muros-arrimo-nbr11682 calcular examples/muro_concreto_balanco_edificio.json
+          fi
